@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistance Calculator</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="resistor.css">
+    <link rel="stylesheet" href="inputs.css">
+    <link rel="stylesheet" href="responsive.css">
+    
+</head>
+<body>
+    <main>
+        <h1 style="text-align: center;">Resistance Calculator</h1>
+        <div class="num">
+        <input id="inputt" type="number" placeholder="Number of bands" >
+        <button class="click" onclick="numofband()">&#9989;</button>
+    </div>
+        <!-- Resistor -->
+        <div class="resistor">
+            <div class="line1"></div>
+            <div class="block1">
+                <div class="band band1" onclick="dropmenu(0)"><span>1</span></div>
+            </div>
+            <div class="block2">
+                <div class="band band2" onclick="dropmenu(1)"><span>2</span></div>
+                <div class="band band3" onclick="dropmenu(2)"><span>3</span></div>
+                <div class="band band4" onclick="dropmenu(3)"><span>4</span></div>
+                <div class="band band5" onclick="dropmenu(4)"><span>5</span></div>
+            </div>
+            <div class="block3">
+                <div class="band band6" onclick="dropmenu(5)"><span>6</span></div>
+            </div>
+            <div class="line2"></div>
+        </div>
+
+        <!-- dropdown menu -->
+        <div class="menu">
+            <li class="menuitems1" onclick="changecolor(0)">0. <span>Black</span></li>
+            <li class="menuitems2" onclick="changecolor(1)">1. <span>Brown</span></li>
+            <li class="menuitems3" onclick="changecolor(2)">2. <span>Red</span></li>
+            <li class="menuitems4" onclick="changecolor(3)">3. <span>Orange</span></li>
+            <li class="menuitems5" onclick="changecolor(4)">4. <span>Yellow</span></li>
+            <li class="menuitems6" onclick="changecolor(5)">5. <span>Green</span></li>
+            <li class="menuitems7" onclick="changecolor(6)">6. <span>Blue</span></li>
+            <li class="menuitems8" onclick="changecolor(7)">7. <span>Violet</span></li>
+            <li class="menuitems9" onclick="changecolor(8)">8. <span>Gray</span></li>
+            <li class="menuitems10" onclick="changecolor(9)">9. <span>White</span></li>
+            <li class="menuitems11" onclick="changecolor(10)"> <span>Gold</span></li>
+            <li class="menuitems12" onclick="changecolor(11)"> <span>Silver</span></li>
+            <li class="menuitems13" onclick="changecolor(12)"> <span>None</span></li>
+        </div>
+        <button class="submit" onclick="calculate()">Submit</button>
+        <div class="value">Please tap on bands to select colors.</div>
+    </main>
+
+
+    <script src="rvalue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

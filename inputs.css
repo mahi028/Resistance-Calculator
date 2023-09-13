@@ -1,0 +1,68 @@
+.num{
+    width: 200px;
+    display: flex;
+    height: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.click{
+    position: relative;
+    background: none;
+    border: none;
+    transition: 0.1s;    
+}
+.click:hover{
+    font-size: large;
+    transform: translateY(-3px);
+}
+.menu{
+    display: none;
+}
+.menu>li{
+    border: 1px solid #d4d4d4;
+    list-style: none;
+    border-radius: 5px;
+    width: 100px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+.menu>li:hover{
+    padding: 10px;
+    width: 110px;
+}
+.menu>li:focus{
+    padding: 10px;
+    width: 110px;
+}
+.submit{
+    position: absolute;;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e6b3b3;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    transition: 0.2s linear;
+}
+.submit:hover{
+    width: 110px;
+    height: 35px;
+}
+.value{
+    position: absolute;
+    background-color: bisque;
+    width: 500px;
+    height: 30px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+}

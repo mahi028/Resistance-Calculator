@@ -1,0 +1,49 @@
+.resistor{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%);
+    align-items: center;
+}
+.block1, .block3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+}
+.block2{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    height: 70px;
+    background-color:bisque;  
+}
+.line1,.line2{
+    width: 80px;
+    height: 5px;
+    background-color: gray;
+}
+.band{
+   width: 30px; 
+   background-color: rgb(216, 198, 198);
+   height: 100px;
+   cursor: pointer;
+   transition: 0.2s linear;
+}
+.band:focus{
+    width: 40px;
+}
+.block2>.band{
+    height: 70px;
+}
+.band:hover{
+   width: 35px; 
+}
+.band>span{
+    position: absolute;
+    transform: translate(10px,-17px);
+}
