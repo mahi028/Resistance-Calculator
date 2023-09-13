@@ -72,7 +72,7 @@ function calculate(){
         if(bandvalue[3]==10 || bandvalue[3]==11){
             let number=''+bandvalue[0]+bandvalue[1];
             let m=multiplyer[bandvalue[2]];
-            output.innerHTML=`${number*m}&#8486; ${tolerance[bandvalue[3]]}, ${TCR[bandvalue[4]]}`;
+            output.innerHTML=`${number*m}&#8486; ${tolerance[bandvalue[3]]}, TCR=${TCR[bandvalue[4]]}`;
         }
 
         else{
