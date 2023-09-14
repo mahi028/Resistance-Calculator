@@ -1,0 +1,79 @@
+@media screen and (max-width: 920px) {
+    .block1, .block3{
+        width: 70px;
+        height: 100px;
+    }
+    .block2{
+        width: 240px;
+        height: 70px;
+    }
+    .line1,.line2{
+        width: 50px;
+        height: 5px;
+    }
+    .band{
+        width: 20px; 
+        height: 100px;
+    }
+}
+@media screen and (max-width: 795px){
+    .block1, .block3{
+        width: 60px;
+        height: 70px;
+    }
+    .block2{
+        width: 190px;
+        height: 50px;
+    }
+    .block2>.band{
+        height: 50px;
+    }
+    .line1,.line2{
+        width: 50px;
+        height: 5px;
+    }
+    .band{
+        width: 15px; 
+        height: 70px;
+    }
+    .submit{
+        top: 620px;
+    }
+    .value{
+        top: 670px;
+    }
+    .menu{
+        position: absolute;
+        left: 50%;
+        top: 200px;
+        transform: translateX(-50%);
+    }
+}
+@media screen and (max-width: 525px){
+    .value{
+        width: 300px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 435px){
+    .resistor{
+        transform: rotate(90deg);
+        left: 65px;
+        top:310px;
+    }
+    .menu{
+        left: 118px;
+        top: 160px;
+    }
+}
+@media screen and (max-width: 355px){
+    .resistor{
+        transform: rotate(90deg);
+        left: 30px;
+        top:310px;
+    }
+}
+
+
+
