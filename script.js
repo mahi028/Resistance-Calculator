@@ -39,9 +39,9 @@ function dropmenu(x){
     bandnum=x;
     menu.style.display='block';
     for(y of selectedband){
-        y.style.width='30px';
+        y.style.width=swidth;
     }
-    selectedband[x].style.width='35px';
+    selectedband[x].style.width=mwidth;
 }
 //changing color of band
 function changecolor(x){
@@ -87,3 +87,17 @@ function calculate(){
         output.innerHTML=`${number*m}&#8486; ${tolerance[bandvalue[4]]}, TCR=${TCR[bandvalue[5]]}`;
     }
 }
+
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+        swidth='15px'
+        mwidth='20px'
+    } 
+    else{
+        swidth='30px'
+        mwidth='35px'
+    } 
+  }
+  var x = window.matchMedia("(max-width: 700px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) // Attach listener function on state changes
