@@ -31,10 +31,6 @@
     .block2>.band{
         height: 50px;
     }
-    .line1,.line2{
-        width: 50px;
-        height: 5px;
-    }
     .band{
         width: 15px; 
         height: 70px;
@@ -72,9 +68,7 @@
 }
 @media screen and (max-width: 355px){
     .resistor{
-        transform: rotate(90deg);
         left: 30px;
-        top:310px;
     }
 }
 
