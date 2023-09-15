@@ -26,7 +26,8 @@ const multiplyer={
     8:10**8,
     9:10**9,
     10:10**-1,
-    11:10**-2
+    11:10**-2,
+    12:1
 }
 
 const tolerance={
@@ -41,7 +42,8 @@ const tolerance={
     8:'&plusmn;0.05%',
     9:'&plusmn;10%',
     10:'&plusmn;5%',
-    11:'&plusmn;10%'
+    11:'&plusmn;10%',
+    12:'no data'
 }
 
 const TCR={
@@ -53,5 +55,9 @@ const TCR={
     5:'20 ppm/K',
     6:'10 ppm/K',
     7:'5 ppm/K',
-    8:'1 ppm/K'
+    8:'1 ppm/K',
+    9:'no data',
+    10:'no data',
+    11:'no data',
+    12:'no data'
 }
